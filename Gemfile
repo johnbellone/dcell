@@ -4,6 +4,7 @@ gem 'celluloid',        github: 'celluloid/celluloid',        branch: 'master'
 gem 'celluloid-io',     github: 'celluloid/celluloid-io',     branch: 'master'
 gem 'celluloid-zmq',    github: 'celluloid/celluloid-zmq',    branch: 'master'
 gem 'celluloid-redis',  github: 'celluloid/celluloid-redis',  branch: 'master'
+gem 'http',             github: 'tarcieri/http',              branch: 'master'
 gem 'reel',             github: 'celluloid/reel',             branch: 'master'
 
 #gem 'ffi-rzmq', github: 'chuckremes/ffi-rzmq'
@@ -15,4 +16,5 @@ gem 'coveralls',     require: false
 gemspec
 
 gem 'zk'
-gem 'etcd'
+gem 'etcd', '~> 0.2.0.beta.1'
+
