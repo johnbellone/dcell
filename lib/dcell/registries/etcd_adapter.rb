@@ -88,8 +88,7 @@ module DCell
         string = Marshal.dump value
         @etcd.set(path, value: string)
       rescue Etcd::NodeExist
-        @etcd.create(path, value: string)
-        Marshal.load(result.value) if result
+        @etcd.update(path, value: string)
       end
 
       def all
